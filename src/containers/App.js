@@ -30,7 +30,7 @@ class App extends Component {
   };
 
   render() {
-    //const { robots, searchfield } = this.state
+    const { robots, searchfield } = this.state
     const filteredRobots = this.state.robots.filter(robot => {
       return robot.name
         .toLowerCase()
@@ -39,8 +39,9 @@ class App extends Component {
     //console.log(filteredRobots);
     //console.log("render");
 
-    // (!robots.length)
-    if (this.state.robots.length === 0) {
+    // if (this.state.robots.length === 0) 
+    if (!robots.length)
+    {
       return <h1>Loading</h1>;
     } else {
       return (
