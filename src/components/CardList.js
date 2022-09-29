@@ -1,6 +1,11 @@
 import Card from './Card';
 
 const CardList = ({ robots }) => {
+//TSEK
+if (true) {
+  throw new  Error ('Nooooo!');
+}
+
   return (
     <div>
       { robots.map((user, i) => {
